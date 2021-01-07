@@ -9,9 +9,6 @@ function App() {
       <header className="App-header">
         <h1>P for Petunia</h1>
       </header>
-      <body>
-        {/*<p>Welcome to my website about flowers and shit.</p>*/}
-      </body>
     </div>
   );
 }

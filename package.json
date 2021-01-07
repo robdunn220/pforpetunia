@@ -7,7 +7,10 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "react": "^17.0.1",
+    "react-adaptive-image": "^1.8.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -19,6 +22,7 @@
     "test": "react-scripts test",
     "predeploy": "yarn build",
     "deploy": "aws s3 sync build/ s3://pforpetunia --delete",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id E82KM8EGRBIKI --paths '/*' && aws cloudfront create-invalidation --distribution-id E1XJI6DL5P5RJP --paths '/*'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
