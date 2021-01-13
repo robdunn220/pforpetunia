@@ -3,7 +3,7 @@ import './NavBar.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import {  ReactComponent as PLogo  } from '../PforPetunia_Logo.svg';
+import {  ReactComponent as PLogo  } from './PFPLogo.svg';
 
 
 export default function NavBar() {
@@ -11,7 +11,7 @@ export default function NavBar() {
         <>
             <Navbar bg="dark" expand="lg" sticky='top' variant='dark'>
                 <Navbar.Brand href="#home">
-                    <PLogo id='logo' className="d-inline-block align-top" height={80} width={160} />
+                    <PLogo id='logo' className="d-inline-block align-top" height={70} viewbox='0 0 16 16' />
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>

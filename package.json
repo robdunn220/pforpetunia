@@ -20,7 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "aws s3 sync build/ s3://pforpetunia --delete",
     "postdeploy": "aws cloudfront create-invalidation --distribution-id E82KM8EGRBIKI --paths '/*' && aws cloudfront create-invalidation --distribution-id E1XJI6DL5P5RJP --paths '/*'",
     "eject": "react-scripts eject"
