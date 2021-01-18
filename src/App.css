@@ -37,4 +37,15 @@
   }
 }
 
+.bg-image {
+  width: 100%;
+  height: auto;
+}
 
+@media only screen and (max-width: 640px) {
+  .bg-image {
+    width: 100%;
+    transform: rotate(90deg);
+    background-repeat: no-repeat;
+  }
+}

@@ -1,13 +1,12 @@
 import './App.css';
 import NavBar from "./components/NavBar";
+import bgimage from './BackgroundImage.png'
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <header className="App-header">
-        <h1>P for Petunia</h1>
-      </header>
+      <img src={bgimage} className='bg-image' alt=""/>
     </div>
   );
 }
