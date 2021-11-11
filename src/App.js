@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from "./components/NavBar";
-import bgimage from './BackgroundImage.png'
+import bgimage from './components/DSC_0001.JPG'
 
 function App() {
   return (

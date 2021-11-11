@@ -39,7 +39,10 @@
 
 .bg-image {
   width: 100%;
-  height: auto;
+}
+
+.rose-image {
+  width: 80px;
 }
 
 @media only screen and (max-width: 640px) {

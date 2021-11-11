@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {  ReactComponent as PLogo  } from './PFPLogo.svg';
+import bgimage from "./DSC_0001.JPG";
+import rose from './Rose_1.png';
 
 
 export default function NavBar() {
@@ -11,7 +13,7 @@ export default function NavBar() {
         <>
             <Navbar bg="dark" expand="lg" sticky='top' variant='dark'>
                 <Navbar.Brand href="#home">
-                    <PLogo id='logo' className="d-inline-block align-top" height={70} viewbox='0 0 16 16' />
+                    <PLogo id='logo' className="d-inline-block align-top" height={65} />
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
@@ -21,6 +23,7 @@ export default function NavBar() {
                         <Nav.Link href="#contact">contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
+                <img src={rose} className='rose-image' alt=""/>
             </Navbar>
         </>
     );
